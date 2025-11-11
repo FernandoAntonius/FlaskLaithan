@@ -1,0 +1,49 @@
+{% extends "main.html" %}{% block content %}
+<form action="/contact" method="post">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name" />
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" />
+  </div>
+  <div class="mb-3">
+    <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
+    <input
+      type="text"
+      class="form-control"
+      id="tempat_lahir"
+      name="tempat_lahir" />
+  </div>
+  <div class="mb-3">
+    <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+    <input
+      type="date"
+      class="form-control"
+      id="tanggal_lahir"
+      name="tanggal_lahir" />
+  </div>
+  <div class="mb-3">
+    <label for="asal_sma" class="form-label">Asal SMA</label>
+    <input type="text" class="form-control" id="asal_sma" name="asal_sma" />
+  </div>
+  <div class="mb-3">
+    <label for="no_hp" class="form-label">No. HP</label>
+    <input
+      type="tel"
+      class="form-control"
+      id="no_hp"
+      name="no_hp"
+      placeholder="cnth. 08123456788" />
+  </div>
+  <div class="mb-3">
+    <label for="foto" class="form-label">Foto</label>
+    <input type="file" class="form-control" id="foto" name="foto" />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- <h1>Contact Us</h1>
+<p>Welcome to the contact page of our website.</p> -->
+{% endblock %}
